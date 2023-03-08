@@ -1,0 +1,7 @@
+$primary: RGBA(245, 223, 78, 1);
+$secondary: RGBA(52, 58, 64, 1);
+
+@mixin poppinsSemiBold {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
