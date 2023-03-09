@@ -1,0 +1,51 @@
+@use '../variables' as *;
+
+section.aboutMe {
+    height: 600px;
+    background-color: rgb(255,255,255);
+}
+
+.aboutMeFlex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        margin-bottom: 31px;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+.textFlex {
+    h3 {
+        margin-top: 31px;
+        font-weight: 400;
+        span {
+            font-weight: bold;
+            border-bottom: 3px solid $primary;
+        }
+    }
+    p {
+        width: 60%;
+        font-weight: 400;
+        margin-top: 28px;
+        margin-bottom: 66px;
+    }
+}
+
+.infoFlex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .key {
+        font-size: .8rem;
+        font-weight: bold;
+        color: #6C757D;
+    }
+    .value {
+        font-size: .9rem;
+        font-weight: bold;
+    }
+}

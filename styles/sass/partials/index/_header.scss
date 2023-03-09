@@ -1,0 +1,97 @@
+@use '../variables' as *;
+
+header {
+    background-color: $primary;
+    height: 800px;
+}
+
+.navFlex {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    span {
+        display: flex;
+        align-items: center;
+        p {
+            margin: 0 20px 0 20px;
+            font-weight: 500;
+            font-size: .8rem;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100% - 70px);
+    .textContent {
+        display: flex;
+        flex-direction: column;
+        .contactMeFlex {
+            display: flex;
+            align-items: center;
+            p, button, i{
+                font-size: .8rem;
+                margin-bottom: 0;
+            }
+            button {
+                width: 207px;
+                height: 54px;
+                background-color: $secondary; 
+                color: rgb(252,252,252);
+                margin-right: 43px;   
+            }
+            p {
+                margin-right: 8px;
+                font-weight: 500;
+            }
+        }
+        h1 {
+            margin: 38px 0 38px 0;
+            font-size: 5.25rem;
+        }
+        h2 {
+            font-weight: 300;
+            font-size: 2.4rem;
+        }
+        p {
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+    }
+    .figureContainer {
+        background-color: rgb(252,252,252);
+        border-radius: 50%;
+        width: 440px;
+        height: 440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        figure {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                filter: grayscale(100%);
+                display: inline;
+                margin: 0 auto;
+                margin-left: -30%; //centers the image
+                height: 100%;
+                width: auto;
+                
+            }
+        }
+    }
+    
+}

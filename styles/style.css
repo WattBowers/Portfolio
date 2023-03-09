@@ -208,6 +208,12 @@ html {
   font-family: "Poppins", sans-serif;
   font-size: 125%;
   color: RGBA(52, 58, 64, 1);
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 *, *:before, *:after {
@@ -233,14 +239,22 @@ html {
   max-width: 1600px;
   width: 85%;
   margin: 0 auto;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: inherit;
+  display: block;
 }
 
 header {
   background-color: RGBA(245, 223, 78, 1);
-  height: 100vh;
+  height: 800px;
 }
 
 .navFlex {
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,8 +266,8 @@ header {
           justify-content: space-between;
 }
 .navFlex h2 {
-  font-size: 1.5rem;
   font-weight: 500;
+  font-size: 1.5rem;
 }
 .navFlex span {
   display: -webkit-box;
@@ -265,12 +279,21 @@ header {
 }
 .navFlex span p {
   margin: 0 20px 0 20px;
+  font-weight: 500;
+  font-size: 0.8rem;
 }
 
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: calc(100% - 70px);
 }
 .content .textContent {
   display: -webkit-box;
@@ -285,4 +308,146 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .textContent .contactMeFlex p, .content .textContent .contactMeFlex button, .content .textContent .contactMeFlex i {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+.content .textContent .contactMeFlex button {
+  width: 207px;
+  height: 54px;
+  background-color: RGBA(52, 58, 64, 1);
+  color: rgb(252, 252, 252);
+  margin-right: 43px;
+}
+.content .textContent .contactMeFlex p {
+  margin-right: 8px;
+  font-weight: 500;
+}
+.content .textContent h1 {
+  margin: 38px 0 38px 0;
+  font-size: 5.25rem;
+}
+.content .textContent h2 {
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+.content .textContent p {
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.content .figureContainer {
+  background-color: rgb(252, 252, 252);
+  border-radius: 50%;
+  width: 440px;
+  height: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .figureContainer figure {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.content .figureContainer figure img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  display: inline;
+  margin: 0 auto;
+  margin-left: -30%;
+  height: 100%;
+  width: auto;
+}
+
+section.aboutMe {
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+}
+
+.aboutMeFlex {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aboutMeFlex h2 {
+  margin-bottom: 31px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.textFlex h3 {
+  margin-top: 31px;
+  font-weight: 400;
+}
+.textFlex h3 span {
+  font-weight: bold;
+  border-bottom: 3px solid RGBA(245, 223, 78, 1);
+}
+.textFlex p {
+  width: 60%;
+  font-weight: 400;
+  margin-top: 28px;
+  margin-bottom: 66px;
+}
+
+.infoFlex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.infoFlex .key {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #6C757D;
+}
+.infoFlex .value {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.techStack {
+  height: 900px;
+  background-color: rgb(248, 249, 250);
+}
+
+.icons figure {
+  height: 100px;
+  width: 100px;
 }

@@ -2,5 +2,12 @@
     max-width: 1600px;
     width: 85%;
     margin: 0 auto;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: inherit;
+    display: block;
 }
 
