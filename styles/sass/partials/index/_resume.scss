@@ -1,0 +1,63 @@
+@use '../variables' as *;
+
+.resumeSummary {
+    height: 850px;
+    background-color: rgb(255,255,255);
+    h2 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .resumeFlex {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.educationFlex {
+    h3 {
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin: 51px 0 35px 0;
+    }
+    .centerItem {
+        border-top: 1px solid rgba(230, 237, 239, 1);
+        border-bottom: 1px solid rgba(230, 237, 239, 1);
+    }
+    .educationItems {
+        border-left: 2px solid $primary;
+        padding-left: 17px;
+        .educationItem {
+            padding: 17px 0 17px 0;
+            h4 {
+                font-weight: 500;
+            }
+            p {
+                font-size: .8rem;
+            }
+            .greyText {
+                color: #6C757D;
+            }
+            .institutionDate {
+                margin-top: 12px;
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
+
+.downloadCv {
+    width: 196px;
+    height: 54px;
+    border: 2px solid rgba(52, 58, 64, 1);
+    background: rgba(52, 58, 64, 0);
+    margin-top: 70px;
+    font-size: .8rem;
+    font-weight: 600;
+}
