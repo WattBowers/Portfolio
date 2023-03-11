@@ -1,0 +1,41 @@
+.projects {
+    height: 600px;
+    background-color: rgb(248,249,250);
+    h2 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
+.projectsFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .imageFlex {
+        display: flex;
+        figure {
+            width: calc(33% - 20px);
+            
+        }
+    }
+    
+}
+
+.onHover {
+    position: relative;
+    bottom: 100%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    color: #1c87c9;
+    background-color: rgba(200, 200, 200, 0.5);
+    transition: all 400ms ease-out;
+    text-align: center;
+    display: flex;
+}
+
+.onHover:hover {
+    opacity: 1;
+}
+
