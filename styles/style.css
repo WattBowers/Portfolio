@@ -417,6 +417,7 @@ section.aboutMe h2 {
   font-size: 2rem;
   position: relative;
   top: 50px;
+  z-index: 10;
 }
 
 .aboutMeFlex {
