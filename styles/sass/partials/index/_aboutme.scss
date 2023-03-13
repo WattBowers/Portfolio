@@ -3,6 +3,13 @@
 section.aboutMe {
     height: 600px;
     background-color: rgb(255,255,255);
+    h2 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 2rem;
+        position: relative;
+        top: 50px;
+    }
 }
 
 .aboutMeFlex {
@@ -11,11 +18,8 @@ section.aboutMe {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    h2 {
-        margin-bottom: 31px;
-        font-size: 2rem;
-        font-weight: bold;
-    }
+    position: relative;
+    bottom: 40px;
 }
 
 .textFlex {
