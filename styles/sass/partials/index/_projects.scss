@@ -1,0 +1,55 @@
+.projects {
+    height: 600px;
+    background-color: rgb(248,249,250);
+    h2 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 2rem;
+        position: relative;
+        top: 50px;
+    }
+}
+
+.projectsFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 90px);
+}
+
+.titleFlex {
+    display: flex
+}
+
+.imageFlex {
+    display: flex;
+    .card {
+        text-align: center;
+    }
+}
+
+// The idea for this next code block comes from https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade
+.container {
+    position: relative;
+    margin: 5px;
+    .centeredText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(248,249,250);
+        font-size: 1.2rem;
+        font-weight: 500;
+        opacity: 0;
+        transition: opacity 0.1s;
+    }
+}
+.container:hover img {
+    filter: blur(10px); 
+}
+  
+.container:hover .centeredText {
+    opacity: 1;
+}
+
