@@ -1,0 +1,67 @@
+@use '../variables' as *;
+
+.getInTouch {
+    height: 700px;
+    background-color: $primary;
+    
+}
+
+.getInTouchFlex {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.infoCol {
+    flex-basis: 50%;
+    margin-right: 50px;
+    h2 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 65px;
+        position: relative;
+        bottom: 50px;
+    }
+    p {
+        line-height: 40px;
+        font-weight: 500;
+    }
+    .marginBottom {
+        margin-bottom: 55px;
+    }
+    .bold {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
+
+.contactForm {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    form {
+        input, label {
+            display: block;
+            width: 100%;
+        }
+        input, textarea {
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid rgb(215,196,69);
+            margin-bottom: 15px;
+        }
+        input {
+            height: 50px;
+        }
+        textarea {
+            resize: none;
+            width: 100%;
+            height: 130px;
+        }
+    }
+    
+    
+}

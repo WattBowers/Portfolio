@@ -16,6 +16,8 @@
     justify-content: center;
     align-items: center;
     height: calc(100% - 90px);
+    position: relative;
+    top: 50px;
 }
 
 .titleFlex {
@@ -53,3 +55,8 @@
     opacity: 1;
 }
 
+.small {
+    width: 80px;
+    height: 54px;
+    margin-top: 10px;
+}
