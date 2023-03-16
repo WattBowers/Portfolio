@@ -1,7 +1,7 @@
 @use '../variables' as *;
 
 .getInTouch {
-    height: 700px;
+    height: 500px;
     background-color: $primary;
     
 }
@@ -16,13 +16,14 @@
 .infoCol {
     flex-basis: 50%;
     margin-right: 50px;
+    display: flex;
+    flex-direction: column;
     h2 {
         font-weight: bold;
         text-align: center;
         font-size: 2rem;
-        padding-bottom: 65px;
-        position: relative;
-        bottom: 50px;
+        margin-bottom: 50px;
+        text-align: start;
     }
     p {
         line-height: 40px;
@@ -34,6 +35,7 @@
     .bold {
         font-size: 1.1rem;
         font-weight: bold;
+        margin-top: 20px;
     }
 }
 
@@ -43,6 +45,7 @@
     flex-direction: column;
     flex-basis: 50%;
     form {
+        margin-top: 73px;
         input, label {
             display: block;
             width: 100%;
