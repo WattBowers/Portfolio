@@ -1,5 +1,7 @@
+@use '../variables' as *;
+
 .projects {
-    height: 800px;
+    height: 600px;
     background-color: rgb(248,249,250);
     h2 {
         font-weight: bold;
@@ -28,6 +30,21 @@
     display: flex;
     .card {
         text-align: center;
+        .buttonFlex {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            a {
+                display: inline-block;
+                text-align: center;
+                line-height: 45px;
+                width: 100px;
+            }
+            a:visited {
+                color: black
+            }
+        }
+        
     }
 }
 
@@ -35,6 +52,8 @@
 .container {
     position: relative;
     margin: 5px;
+    height: 290px;
+    width: 430px;
     .centeredText {
         position: absolute;
         top: 50%;
@@ -45,6 +64,10 @@
         font-weight: 500;
         opacity: 0;
         transition: opacity 0.1s;
+        user-select: none;
+    }
+    .blackText {
+        color: black;
     }
 }
 .container:hover img {
@@ -56,7 +79,70 @@
 }
 
 .small {
-    width: 80px;
-    height: 54px;
     margin-top: 10px;
+    width: 100px
 }
+
+//this modal idea comes from https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 450px;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    z-index: 20;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    .modalFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        button {
+            position: relative;
+            bottom: 15px;
+            right: 10px; 
+            padding: 0.5rem 0.7rem;
+            background: #eee;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+        }
+        p {
+            text-align: start;
+            margin-bottom: 10px;
+            cursor: default;
+            span:hover {
+                color: $primary;
+                
+            }
+        }
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 10;
+  }
+
+ .hidden {
+   display: none;
+ }

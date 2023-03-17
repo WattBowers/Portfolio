@@ -186,28 +186,76 @@
                 <div class="imageFlex">
                     <div class="card">
                         <figure class="container">
-                            <img src="./images/film.jpg" alt="Film">
-                            <div class="centeredText">Hover Text</div>
+                            <img src="./images/Planted.png" alt="Film">
+                            <div class="centeredText">PSD conversion</div>
+                            <figcaption class="srOnly">Planted: a PSD Conversion</figcaption>
                         </figure>
-                        <button class="btn small">Live Site</button>
-                        <button class="btn small">Repo</button>
+                        <div class="buttonFlex">
+                            <a href="https://jacksondevprojectone.netlify.app/" target=”_blank” class="btn small">Live Site</a>
+                            <a href="https://github.com/WattBowers/project-1" target="_blank" class="btn small">Repo</a>
+                            <button id="psd" class="btn small">Tools</button>
+                            <div id="psdModal" class="modal hidden">
+                                <div class="modalFlex">
+                                    <button id="psdCloseBtn" class="btnClose">X</button>
+                                    <p>Planted is a PSD conversion into a site built with <span>HTML</span>, <span>CSS</span>, and <span>Sass</span>, it is hosted on <span>Netlify.</p>
+                                        
+                                    <p>To ensure the accessibility and responsiveness of the site, I used modern web development techniques such as semantic <span>HTML</span>, responsive design patterns, and accessibility best practices. <span>Sass</span> was used to make the code more modular and reusable.</p>
+                                    <div class="buttonFlex">
+                                        <a href="https://jacksondevprojectone.netlify.app/" target=”_blank” class="btn small">Live Site</a>
+                                    <a href="https://github.com/WattBowers/project-1" target="_blank" class="btn small">Repo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="psdOverlay" class="overlay hidden"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <figure class="container">
+                            <img src="./images/WBWMovies.png" alt="Film">
+                            <div class="centeredText blackText">WBW Movies</div>
+                            <figcaption class="srOnly">WBW Movies: A movie tracking app.</figcaption>
+                        </figure>
+                        <div class="buttonFlex">
+                            <a href="https://wbwmovies.netlify.app/" target="_blank" class="btn small">Live Site</a>
+                            <a href="https://github.com/WattBowers/WBWMovies" target="_blank" class="btn small">Repo</a>
+                            <button id="wbw" class="btn small">Tools</button>
+                            <div id="wbwModal" class="modal hidden">
+                                <div class="flex">
+                                    <img src="user.png" width="50px" height="50px" alt="user" />
+                                    <button id="wbwCloseBtn" class="btnClose">⨉</button>
+                                  </div>
+                                  <div>
+                                    <h3>wbw</h3>
+                                    <p>
+                                      This is a dummy newsletter form so don't bother trying to test it. Not
+                                      that I expect you to, anyways. :)
+                                    </p>
+                                  </div>
+                            </div>
+                            <div id="wbwOverlay" class="overlay hidden"></div>
+                        </div>
                     </div>
                     <div class="card">
                         <figure class="container">
                             <img src="./images/film.jpg" alt="Film">
-                            <div class="centeredText">Hover Text</div>
+                            <div class="centeredText">Placeholder for project Three</div>
+                            <figcaption class="srOnly">Placeholder</figcaption>
                         </figure>
-                        <button class="btn small">Live Site</button>
-                        <button class="btn small">Repo</button>
-                    </div>
-                    <div class="card">
-                        <figure class="container">
-                            <img src="./images/film.jpg" alt="Film">
-                            <div class="centeredText">Hover Text</div>
-                        </figure>
-                        <button class="btn small">Live Site</button>
-                        <button class="btn small">Repo</button>
-
+                        <div class="buttonFlex">
+                            <a href="#" class="btn small">Live Site</a>
+                            <a href="#" class="btn small">Repo</a>
+                            <button id="placeholder" class="btn small">Tools</button>
+                            <div id="placeholderModal" class="modal hidden">
+                                <div class="modalFlex">
+                                    <button id="placeholderCloseBtn" class="btnClose">X</button>
+                                    <p>Planted is a PSD conversion into a site built with <span>HTML</span>, <span>CSS</span>, and <span>Sass</span>, it is hosted on <span>Netlify.</p>
+                                        
+                                    <p>To ensure the accessibility and responsiveness of the site, I used modern web development techniques such as semantic <span>HTML</span>, responsive design patterns, and accessibility best practices. <span>Sass</span> was used to make the code more modular and reusable.</p>
+                                </div>
+                            </div>
+                            <div id="placeholderOverlay" class="overlay hidden"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,5 +299,6 @@
 </footer>
 <body>
     <script src="https://kit.fontawesome.com/9a2cbc2244.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
