@@ -147,6 +147,12 @@
     }
 }
 
+@media (max-width: 500px) {
+    .modal {
+        width: 300px;
+    }
+}
+
 @media (max-width: 410px) {
     .content {
         justify-content: center;

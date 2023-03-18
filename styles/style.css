@@ -1137,6 +1137,11 @@ footer .footerFlex p span {
     font-size: 0.8rem;
   }
 }
+@media (max-width: 500px) {
+  .modal {
+    width: 300px;
+  }
+}
 @media (max-width: 410px) {
   .content {
     -webkit-box-pack: center;
