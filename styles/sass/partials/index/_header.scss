@@ -40,12 +40,21 @@ header {
                 font-size: .8rem;
                 margin-bottom: 0;
             }
-            button {
+            .works {
                 width: 207px;
                 height: 54px;
                 background-color: $secondary; 
                 color: rgb(252,252,252);
                 margin-right: 43px;   
+                cursor: pointer;
+                user-select: none;
+            }
+            .contactAnchorFlex {
+                display: flex;
+                a {
+                    display: flex;
+                    align-items: center;
+                }
             }
             p {
                 margin-right: 8px;
@@ -73,6 +82,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         figure {
             border-radius: 50%;
             width: 400px;
@@ -92,5 +102,4 @@ header {
             }
         }
     }
-    
 }

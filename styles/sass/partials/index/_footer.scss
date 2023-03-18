@@ -1,7 +1,7 @@
 @use '../variables' as *;
 
 footer {
-    height: 200px;
+    height: 100px;
     background-color: black;
     
     .footerFlex {
@@ -10,6 +10,7 @@ footer {
         align-items: center;
         p {
             color: white;
+            font-size: .5rem;
             span {
                 color: $primary;
             }

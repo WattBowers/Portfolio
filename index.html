@@ -17,7 +17,6 @@
             <span>
                 <i class="fa-solid fa-phone-flip"></i>
                 <p>(343) 333 - 6261</p>
-                <i class="fa-sharp fa-solid fa-bars"></i>
             </span>
         </nav>
         <div class="content">
@@ -26,9 +25,12 @@
                 <h1>WEB DEVELOPER</h1>
                 <p>based in Ontario, Canada.</p>
                 <div class="contactMeFlex">
-                    <button>View My works</button>
-                    <p>Contact Me</p>
-                    <i class="fa-solid fa-circle-arrow-down"></i>
+                    <a class="works" href="#projects">View My Work</a>
+                    <div class="contactAnchorFlex">
+                        <a href="#contact"><p>Contact Me</p><i class="fa-solid fa-circle-arrow-down"></i></a>
+                        
+                    </div>
+                    
                 </div>
             </div>
             <div class="figureContainer">
@@ -45,23 +47,23 @@
             <h2>About Me</h2>
             <div class="aboutMeFlex">
                 <div class="textFlex">
-                    <h3>Hi, I'm <span>Jackson Watt-Bowers</span></h3>
+                    <h3>I'm <span>Jackson Watt-Bowers</span></h3>
                     <p>I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.</p>
                 </div>
                 <div class="infoFlex">
-                    <div>
+                    <div class="keyValueFlex">
                         <p class="key">Email:</p>
                         <p class="value">Wattbowers@gmail.com</p>
                     </div>
-                    <div>
+                    <div class="keyValueFlex">
                         <p class="key">LinkedIn:</p>
-                        <p class="value">Linkedin/in/wattbowers</p>
+                        <a target="_blank" href="https://www.linkedin.com/in/wattbowers/"><p class="value">Linkedin/in/wattbowers</p></a>
                     </div>
-                    <div>
+                    <div class="keyValueFlex">
                         <p class="key">Github:</p>
-                        <p class="value">Wattbowers</p>
+                        <a target="_blank" href="https://github.com/WattBowers"><p class="value">Wattbowers</p></a>
                     </div>
-                    <div>
+                    <div class="keyValueFlex">
                         <p class="key">From:</p>
                         <p class="value">Kingston, Ontario</p>
                     </div>
@@ -137,7 +139,7 @@
                         <h3>My Education</h3>
                         <div class="educationItems">
                             <div class="educationItem">
-                                <h4>Web Developemnt Bootcamp</h4>
+                                <h4>Web Development Bootcamp</h4>
                                 <p class="institutionDate">2023 / Juno College</p>
                                 <p class="greyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, enim illum ipsum reprehenderit harum voluptatibus?</p>
                             </div>
@@ -157,29 +159,29 @@
                         <h3>My Skills</h3>
                         <div class="educationItems">
                             <div class="educationItem">
-                                <h4>Web Developemnt Bootcamp</h4>
-                                <p class="institutionDate">2023 / Juno College</p>
-                                <p class="greyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, enim illum ipsum reprehenderit harum voluptatibus?</p>
+                                <h4>Communication</h4>
+                                <p class="institutionDate"></p>
+                                <p class="greyText">Strong communication skills enable me to effectively collaborate with clients and team members, while ensuring that project requirements are clearly understood and met.</p>
                             </div>
                             <div class="educationItem centerItem">
-                                <h4>Batchelor of Arts, Theatre and Drama</h4>
-                                <p class="institutionDate">University of Toronto / 2014-2018</p>
-                                <p class="greyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam aut modi numquam asperiores vel maxime.</p>
+                                <h4>Time Management</h4>
+                                <p class="institutionDate"></p>
+                                <p class="greyText">With excellent time management skills, I am able to consistently deliver high-quality work on time, even when working under tight deadlines.</p>
                             </div>
                             <div class="educationItem">
-                                <h4>Conservatory Theatre Diploma</h4>
-                                <p class="institutionDate">Sheridan College / 2014-2018</p>
-                                <p class="greyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magnam esse est a eum illo?</p>
+                                <h4>Problem Solving</h4>
+                                <p class="institutionDate"></p>
+                                <p class="greyText">My strong problem-solving skills allow me to quickly identify and resolve issues that arise during development, ensuring that websites are delivered error-free and optimized for performance.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            <button class="btn">Download CV</button>
+            <a href="./files/Jackson_Resume.pdf" download class="btn">Download CV</a>
             </div>
         </div>
         
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
         <div class="wrapper">
             <h2>Projects</h2>
             <div class="projectsFlex">
@@ -197,12 +199,12 @@
                             <div id="psdModal" class="modal hidden">
                                 <div class="modalFlex">
                                     <button id="psdCloseBtn" class="btnClose">X</button>
-                                    <p>Planted is a PSD conversion into a site built with <span>HTML</span>, <span>CSS</span>, and <span>Sass</span>, it is hosted on <span>Netlify.</p>
+                                    <p><strong>Planted</strong> is a site I converted from a PSD mockup. Built with <span>HTML</span>, <span>CSS</span>, and <span>Sass</span>,and it is hosted on <span>Netlify</span>.</p>
                                         
                                     <p>To ensure the accessibility and responsiveness of the site, I used modern web development techniques such as semantic <span>HTML</span>, responsive design patterns, and accessibility best practices. <span>Sass</span> was used to make the code more modular and reusable.</p>
                                     <div class="buttonFlex">
                                         <a href="https://jacksondevprojectone.netlify.app/" target=”_blank” class="btn small">Live Site</a>
-                                    <a href="https://github.com/WattBowers/project-1" target="_blank" class="btn small">Repo</a>
+                                        <a href="https://github.com/WattBowers/project-1" target="_blank" class="btn small">Repo</a>
                                     </div>
                                 </div>
                             </div>
@@ -221,17 +223,16 @@
                             <a href="https://github.com/WattBowers/WBWMovies" target="_blank" class="btn small">Repo</a>
                             <button id="wbw" class="btn small">Tools</button>
                             <div id="wbwModal" class="modal hidden">
-                                <div class="flex">
-                                    <img src="user.png" width="50px" height="50px" alt="user" />
-                                    <button id="wbwCloseBtn" class="btnClose">⨉</button>
-                                  </div>
-                                  <div>
-                                    <h3>wbw</h3>
-                                    <p>
-                                      This is a dummy newsletter form so don't bother trying to test it. Not
-                                      that I expect you to, anyways. :)
-                                    </p>
-                                  </div>
+                                <div class="modalFlex">
+                                    <button id="wbwCloseBtn" class="btnClose">X</button>
+                                    <p><strong>WBWMovies</strong> is a comprehensive movie tracking application that enables you to easily manage your to-watch list. The platform was built using a combination of <span>Javascript</span>, <span>HTML</span>, <span>CSS</span>, <span>Sass</span>, and <span>Firebase</span> for the backend, ensuring a highly responsive and efficient user experience. The site is hosted on <span>Netlify</span>.</p>
+
+                                    <p>Our platform includes a user authentication system that enables each user to keep track of their own list of movies. This feature ensures that every user's preferences are catered to, allowing them to tailor their movie tracking experience to their needs.</p>
+                                    <div class="buttonFlex">
+                                        <a href="https://wbwmovies.netlify.app/" target="_blank" class="btn small">Live Site</a>
+                                        <a href="https://github.com/WattBowers/WBWMovies" target="_blank" class="btn small">Repo</a>
+                                    </div>
+                                </div>
                             </div>
                             <div id="wbwOverlay" class="overlay hidden"></div>
                         </div>
@@ -249,9 +250,7 @@
                             <div id="placeholderModal" class="modal hidden">
                                 <div class="modalFlex">
                                     <button id="placeholderCloseBtn" class="btnClose">X</button>
-                                    <p>Planted is a PSD conversion into a site built with <span>HTML</span>, <span>CSS</span>, and <span>Sass</span>, it is hosted on <span>Netlify.</p>
-                                        
-                                    <p>To ensure the accessibility and responsiveness of the site, I used modern web development techniques such as semantic <span>HTML</span>, responsive design patterns, and accessibility best practices. <span>Sass</span> was used to make the code more modular and reusable.</p>
+                                    <p>This is a placeholder for a future project</p>
                                 </div>
                             </div>
                             <div id="placeholderOverlay" class="overlay hidden"></div>
@@ -261,7 +260,7 @@
             </div>
         </div>
     </section>
-    <section class="getInTouch">
+    <section id="contact" class="getInTouch">
         <div class="wrapper">
             
             <div class="getInTouchFlex">
@@ -274,19 +273,20 @@
                     <p>(343) 333-6261</p>
                 </div>
                 <div class="contactForm">
-                    <form action="submit">
+                    <form action="https://submit-form.com/YCgdYIvh">
                         <label for="name">Name</label>
-                        <input id="name" type="text">
+                        <input required="true" id="name" type="text">
 
                         <label for="email">Email Address</label>
-                        <input id="email" type="text">
+                        <input required="true" id="email" type="text">
 
                         <label for="message">Message</label>
-                        <textarea resize="false" id="message" type="text"></textarea>
+                        <textarea required="true" name="message" resize="false" id="message" type="text"></textarea>
+
+                        <button type="submit">Submit</button>
                     </form>
                 </div>
             </div>
-            
         </div>
     </section>
 </main>
@@ -295,7 +295,6 @@
     <p>Copyright © 2023 <span>Jackson Watt-Bowers.</span> All Rights Reserved.</p>
     <p>Designed by Harnish Design</p>
     </div>
-    
 </footer>
 <body>
     <script src="https://kit.fontawesome.com/9a2cbc2244.js" crossorigin="anonymous"></script>

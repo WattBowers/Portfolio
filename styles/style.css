@@ -342,12 +342,30 @@ header {
   font-size: 0.8rem;
   margin-bottom: 0;
 }
-.content .textContent .contactMeFlex button {
+.content .textContent .contactMeFlex .works {
   width: 207px;
   height: 54px;
   background-color: RGBA(52, 58, 64, 1);
   color: rgb(252, 252, 252);
   margin-right: 43px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.content .textContent .contactMeFlex .contactAnchorFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.content .textContent .contactMeFlex .contactAnchorFlex a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .content .textContent .contactMeFlex p {
   margin-right: 8px;
@@ -380,6 +398,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .content .figureContainer figure {
   border-radius: 50%;
@@ -448,7 +469,6 @@ section.aboutMe h2 {
   border-bottom: 3px solid RGBA(245, 223, 78, 1);
 }
 .textFlex p {
-  width: 60%;
   font-weight: 400;
   margin-top: 28px;
   margin-bottom: 66px;
@@ -463,16 +483,29 @@ section.aboutMe h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.infoFlex .key {
+.infoFlex .keyValueFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.infoFlex .keyValueFlex .key {
   font-size: 0.8rem;
   font-weight: bold;
   color: #6C757D;
 }
-.infoFlex .value {
+.infoFlex .keyValueFlex .value {
   font-size: 0.9rem;
   font-weight: bold;
   margin-top: 17px;
+  line-height: 18px;
 }
 
 .techStack {
@@ -518,6 +551,9 @@ section.aboutMe h2 {
           box-shadow: 10px 0 0 RGBA(245, 223, 78, 1), 20px 0 0 rgb(248, 249, 250), 30px 0 0 RGBA(245, 223, 78, 1), 0 10px 0 RGBA(245, 223, 78, 1), 10px 10px 0 rgb(248, 249, 250), 20px 10px 0 RGBA(245, 223, 78, 1), 30px 10px 0 rgb(248, 249, 250), 0 20px 0 rgb(248, 249, 250), 10px 20px 0 RGBA(245, 223, 78, 1), 20px 20px 0 rgb(248, 249, 250), 30px 20px 0 RGBA(245, 223, 78, 1), 0 30px 0 RGBA(245, 223, 78, 1), 10px 30px 0 rgb(248, 249, 250), 20px 30px 0 RGBA(245, 223, 78, 1), 30px 30px 0 rgb(248, 249, 250), 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .icons .card {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,7 +582,7 @@ section.aboutMe h2 {
 }
 
 .resumeSummary {
-  height: 850px;
+  height: 900px;
   background-color: rgb(255, 255, 255);
 }
 .resumeSummary h2 {
@@ -632,6 +668,16 @@ section.aboutMe h2 {
   background-color: RGBA(245, 223, 78, 1);
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
           box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+a {
+  text-align: center;
+  line-height: 50px;
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
 
 .projects {
@@ -891,15 +937,24 @@ section.aboutMe h2 {
 }
 .contactForm form input {
   height: 50px;
+  padding: 0 0 0 10px;
 }
 .contactForm form textarea {
   resize: none;
   width: 100%;
   height: 130px;
+  padding: 10px 0 0 10px;
+}
+.contactForm form button {
+  background-color: black;
+  color: white;
+  width: 155px;
+  height: 50px;
+  cursor: pointer;
 }
 
 footer {
-  height: 200px;
+  height: 100px;
   background-color: black;
 }
 footer .footerFlex {
@@ -915,7 +970,242 @@ footer .footerFlex {
 }
 footer .footerFlex p {
   color: white;
+  font-size: 0.5rem;
 }
 footer .footerFlex p span {
   color: RGBA(245, 223, 78, 1);
+}
+
+@media (max-width: 1340px) {
+  .projects {
+    height: 2200px;
+  }
+  .imageFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imageFlex .card {
+    margin-bottom: 20px;
+  }
+  figure.container {
+    height: 600px;
+    width: 889px;
+  }
+}
+@media (max-width: 1100px) {
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .content .textContent h1 {
+    font-size: 4rem;
+  }
+  .content .textContent p {
+    margin-bottom: 10px;
+  }
+  .content .figureContainer {
+    height: 400px;
+    width: 400px;
+  }
+  .content .figureContainer figure {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 920px) {
+  .infoFlex .keyValueFlex .key, .infoFlex .keyValueFlex .value {
+    font-size: 0.7rem;
+  }
+  .resumeSummary a.btn {
+    margin-top: 0;
+  }
+  .projects {
+    height: 1700px;
+  }
+  figure.container {
+    height: 400px;
+    width: 593px;
+  }
+  .getInTouch {
+    height: 900px;
+  }
+  .getInTouchFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .getInTouchFlex .infoCol {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  .getInTouchFlex .infoCol .marginBottom {
+    margin: 0;
+  }
+  .getInTouchFlex .infoCol h2 {
+    text-align: center;
+  }
+  .getInTouchFlex .contactForm {
+    margin: 0;
+    width: 80%;
+  }
+  .getInTouchFlex .contactForm form {
+    margin: 0;
+  }
+}
+@media (max-width: 720px) {
+  .aboutMeFlex {
+    bottom: 0px;
+  }
+  .content .textContent h1 {
+    font-size: 3rem;
+    margin: 10px 0 10px 0;
+  }
+  .textFlex p {
+    margin: 20px 0 20px 0;
+  }
+  section.aboutMe h2 {
+    display: none;
+  }
+  .infoFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 200px;
+  }
+  .infoFlex .keyValueFlex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infoFlex .keyValueFlex .value {
+    margin: 0 0 0 15px;
+  }
+  .techStack {
+    height: 400px;
+  }
+  .techStack h2 {
+    padding-top: 20px;
+  }
+  .icons .card i {
+    font-size: 2.25rem;
+  }
+  .icons .card figure {
+    height: 50px;
+    width: 50px;
+  }
+  .icons .card p {
+    font-size: 0.8rem;
+  }
+  .resumeSummary {
+    height: 1400px;
+  }
+  .experienceContainer .resumeFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 640px) {
+  .projects {
+    height: 1300px;
+  }
+  figure.container {
+    height: 270px;
+    width: 400px;
+  }
+  .getInTouch {
+    height: 1100px;
+  }
+  .infoCol p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 410px) {
+  .content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content .textContent .contactMeFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content .textContent .contactMeFlex .works {
+    margin: 0;
+  }
+  .content .figureContainer {
+    display: none;
+  }
+  .navFlex h2 {
+    font-size: 1rem;
+  }
+  .navFlex span p {
+    margin: 0 0 0 5px;
+  }
+  .textFlex p {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+  .techStackFlex {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .icons .card {
+    width: 25%;
+    margin-bottom: 5px;
+  }
+  .resumeSummary {
+    height: 1500px;
+  }
+  .projects {
+    height: 1100px;
+  }
+  figure.container {
+    height: 200px;
+    width: 296px;
+  }
+  footer .footerFlex p {
+    font-size: 0.3rem;
+  }
+}
+@media (max-width: 360px) {
+  .content .textContent h1 {
+    font-size: 2rem;
+  }
+  .content .textContent h2 {
+    font-size: 1.8rem;
+  }
+  .content .textContent p {
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+  }
+  .textFlex h3 {
+    font-size: 0.8rem;
+  }
+  .icons .card p {
+    font-size: 0.5rem;
+  }
+  .resumeSummary {
+    height: 1600px;
+  }
 }
