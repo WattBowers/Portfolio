@@ -501,6 +501,9 @@ section.aboutMe h2 {
   font-weight: bold;
   color: #6C757D;
 }
+.infoFlex .keyValueFlex a {
+  text-decoration: underline;
+}
 .infoFlex .keyValueFlex .value {
   font-size: 0.9rem;
   font-weight: bold;
@@ -545,6 +548,9 @@ section.aboutMe h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-shadow: 10px 0 0 RGBA(245, 223, 78, 1), 20px 0 0 rgb(248, 249, 250), 30px 0 0 RGBA(245, 223, 78, 1), 0 10px 0 RGBA(245, 223, 78, 1), 10px 10px 0 rgb(248, 249, 250), 20px 10px 0 RGBA(245, 223, 78, 1), 30px 10px 0 rgb(248, 249, 250), 0 20px 0 rgb(248, 249, 250), 10px 20px 0 RGBA(245, 223, 78, 1), 20px 20px 0 rgb(248, 249, 250), 30px 20px 0 RGBA(245, 223, 78, 1), 0 30px 0 RGBA(245, 223, 78, 1), 10px 30px 0 rgb(248, 249, 250), 20px 30px 0 RGBA(245, 223, 78, 1), 30px 30px 0 rgb(248, 249, 250), 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -621,6 +627,8 @@ section.aboutMe h2 {
 
 .educationFlex {
   margin: 0 5px 0 5px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 .educationFlex h3 {
   font-weight: bold;
@@ -889,6 +897,9 @@ a:visited {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .infoCol h2 {
   font-weight: bold;
@@ -978,7 +989,7 @@ footer .footerFlex p span {
 
 @media (max-width: 1340px) {
   .projects {
-    height: 2200px;
+    height: 2400px;
   }
   .imageFlex {
     -webkit-box-orient: vertical;
@@ -987,7 +998,7 @@ footer .footerFlex p span {
             flex-direction: column;
   }
   .imageFlex .card {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   figure.container {
     height: 600px;
@@ -1136,6 +1147,9 @@ footer .footerFlex p span {
   .infoCol p {
     font-size: 0.8rem;
   }
+  section.aboutMe {
+    height: 750px;
+  }
 }
 @media (max-width: 500px) {
   .modal {
@@ -1170,14 +1184,20 @@ footer .footerFlex p span {
     font-size: 0.8rem;
     line-height: 20px;
   }
+  .techStack {
+    height: 500px;
+  }
   .techStackFlex {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .icons {
+    margin: 0 40px 40px 0;
+  }
   .icons .card {
     width: 25%;
-    margin-bottom: 5px;
+    margin-bottom: 40px;
   }
   .resumeSummary {
     height: 1500px;
