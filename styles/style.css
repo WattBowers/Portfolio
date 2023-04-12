@@ -588,7 +588,7 @@ section.aboutMe h2 {
 }
 
 .resumeSummary {
-  height: 900px;
+  height: 800px;
   background-color: rgb(255, 255, 255);
 }
 .resumeSummary h2 {
@@ -689,7 +689,7 @@ a:visited {
 }
 
 .projects {
-  height: 600px;
+  height: 1100px;
   background-color: rgb(248, 249, 250);
 }
 .projects h2 {
@@ -726,12 +726,32 @@ a:visited {
 }
 
 .imageFlex {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .imageFlex .card {
   text-align: center;
+  width: calc(50% - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .imageFlex .card .buttonFlex {
   display: -webkit-box;
@@ -791,6 +811,10 @@ a:visited {
 .small {
   margin-top: 10px;
   width: 100px;
+}
+
+.toolsBtn {
+  cursor: pointer;
 }
 
 .modal {
@@ -989,7 +1013,7 @@ footer .footerFlex p span {
 
 @media (max-width: 1340px) {
   .projects {
-    height: 2400px;
+    height: 3500px;
   }
   .imageFlex {
     -webkit-box-orient: vertical;
@@ -1038,7 +1062,10 @@ footer .footerFlex p span {
     margin-top: 0;
   }
   .projects {
-    height: 1700px;
+    height: 2500px;
+  }
+  .projects .imageFlex .card {
+    width: calc(100% - 15px);
   }
   figure.container {
     height: 400px;
@@ -1135,7 +1162,7 @@ footer .footerFlex p span {
 }
 @media (max-width: 640px) {
   .projects {
-    height: 1300px;
+    height: 2000px;
   }
   figure.container {
     height: 270px;
@@ -1203,7 +1230,7 @@ footer .footerFlex p span {
     height: 1500px;
   }
   .projects {
-    height: 1100px;
+    height: 1500px;
   }
   figure.container {
     height: 200px;

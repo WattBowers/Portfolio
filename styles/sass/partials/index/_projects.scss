@@ -1,7 +1,7 @@
 @use '../variables' as *;
 
 .projects {
-    height: 600px;
+    height: 1100px;
     background-color: rgb(248,249,250);
     h2 {
         font-weight: bold;
@@ -27,9 +27,17 @@
 }
 
 .imageFlex {
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     .card {
         text-align: center;
+        width: calc(50% - 100px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .buttonFlex {
             display: flex;
             justify-content: space-evenly;
@@ -81,6 +89,10 @@
 .small {
     margin-top: 10px;
     width: 100px
+}
+
+.toolsBtn {
+    cursor: pointer;
 }
 
 //this modal idea comes from https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/
