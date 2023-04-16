@@ -635,16 +635,30 @@ section.aboutMe h2 {
   font-size: 1.4rem;
   margin: 51px 0 35px 0;
 }
-.educationFlex .centerItem {
-  border-top: 1px solid rgb(230, 237, 239);
-  border-bottom: 1px solid rgb(230, 237, 239);
-}
 .educationFlex .educationItems {
   border-left: 2px solid RGBA(245, 223, 78, 1);
   padding-left: 17px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
-.educationFlex .educationItems .educationItem {
+.educationFlex .educationItems .centerItem {
+  border-top: 1px solid rgb(230, 237, 239);
+  border-bottom: 1px solid rgb(230, 237, 239);
   padding: 17px 0 17px 0;
+}
+.educationFlex .educationItems .rightCenterItem {
+  border-top: 1px solid rgb(230, 237, 239);
+  border-bottom: 1px solid rgb(230, 237, 239);
+  padding: 30px 0 30px 0;
 }
 .educationFlex .educationItems .educationItem h4 {
   font-weight: 500;
@@ -658,6 +672,15 @@ section.aboutMe h2 {
 .educationFlex .educationItems .educationItem .institutionDate {
   margin-top: 12px;
   margin-bottom: 18px;
+}
+.educationFlex .educationItems .educationItem .centerItem {
+  border-top: 1px solid rgb(230, 237, 239);
+  border-bottom: 1px solid rgb(230, 237, 239);
+}
+.educationFlex .educationItems .educationItem .rightCenterItem {
+  border-top: 1px solid rgb(230, 237, 239);
+  border-bottom: 1px solid rgb(230, 237, 239);
+  padding: 30px 0 30px 0;
 }
 
 .btn {
@@ -875,7 +898,7 @@ a:visited {
   cursor: pointer;
 }
 .modal .modalFlex p {
-  text-align: center;
+  text-align: start;
   margin-bottom: 10px;
   cursor: default;
 }

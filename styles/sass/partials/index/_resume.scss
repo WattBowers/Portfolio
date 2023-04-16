@@ -32,15 +32,26 @@
         font-size: 1.4rem;
         margin: 51px 0 35px 0;
     }
-    .centerItem {
-        border-top: 1px solid rgba(230, 237, 239, 1);
-        border-bottom: 1px solid rgba(230, 237, 239, 1);
-    }
+   
     .educationItems {
         border-left: 2px solid $primary;
         padding-left: 17px;
-        .educationItem {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .centerItem {
+            border-top: 1px solid rgba(230, 237, 239, 1);
+            border-bottom: 1px solid rgba(230, 237, 239, 1);
             padding: 17px 0 17px 0;
+        }
+        .rightCenterItem {
+            border-top: 1px solid rgba(230, 237, 239, 1);
+            border-bottom: 1px solid rgba(230, 237, 239, 1);
+            padding: 30px 0 30px 0;
+        }
+        .educationItem {
+            
             h4 {
                 font-weight: 500;
             }
@@ -54,6 +65,15 @@
                 margin-top: 12px;
                 margin-bottom: 18px;
             }
+             .centerItem {
+        border-top: 1px solid rgba(230, 237, 239, 1);
+        border-bottom: 1px solid rgba(230, 237, 239, 1);
+    }
+    .rightCenterItem {
+        border-top: 1px solid rgba(230, 237, 239, 1);
+        border-bottom: 1px solid rgba(230, 237, 239, 1);
+        padding: 30px 0 30px 0;
+    }
         }
     }
 }
