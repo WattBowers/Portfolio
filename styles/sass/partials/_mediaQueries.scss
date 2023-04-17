@@ -23,9 +23,7 @@
         .textContent h1 {
             font-size: 4rem;
         }
-        .textContent p {
-            margin-bottom: 10px;
-        }
+        
         .figureContainer {
             height: 400px; 
             width: 400px;
@@ -57,7 +55,8 @@
         width: 593px;
     }
     .getInTouch {
-        height: 900px
+        height: 800px;
+        padding-bottom: 50px;
     }
     .getInTouchFlex {
         flex-direction: column;
@@ -158,6 +157,12 @@
     .modal {
         width: 300px;
     }
+    .imageFlex .card .buttonFlex {
+        justify-content: center;
+        a, button {
+            margin: 10px 5px 0px 5px
+        }
+    }
 }
 
 @media (max-width: 410px) {
@@ -202,7 +207,7 @@
         
     }
     .resumeSummary {
-        height: 1500px;
+        height: 1300px;
     }
     .projects {
         height: 1500px;

@@ -839,6 +839,7 @@ a:visited {
 
 .toolsBtn {
   cursor: pointer;
+  color: black;
 }
 
 .modal {
@@ -1072,9 +1073,6 @@ footer .footerFlex p span {
   .content .textContent h1 {
     font-size: 4rem;
   }
-  .content .textContent p {
-    margin-bottom: 10px;
-  }
   .content .figureContainer {
     height: 400px;
     width: 400px;
@@ -1102,7 +1100,8 @@ footer .footerFlex p span {
     width: 593px;
   }
   .getInTouch {
-    height: 900px;
+    height: 800px;
+    padding-bottom: 50px;
   }
   .getInTouchFlex {
     -webkit-box-orient: vertical;
@@ -1212,6 +1211,14 @@ footer .footerFlex p span {
   .modal {
     width: 300px;
   }
+  .imageFlex .card .buttonFlex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .imageFlex .card .buttonFlex a, .imageFlex .card .buttonFlex button {
+    margin: 10px 5px 0px 5px;
+  }
 }
 @media (max-width: 410px) {
   .content {
@@ -1257,7 +1264,7 @@ footer .footerFlex p span {
     margin-bottom: 40px;
   }
   .resumeSummary {
-    height: 1500px;
+    height: 1300px;
   }
   .projects {
     height: 1500px;
