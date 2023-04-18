@@ -557,9 +557,9 @@ section.aboutMe h2 {
           box-shadow: 10px 0 0 RGBA(245, 223, 78, 1), 20px 0 0 rgb(248, 249, 250), 30px 0 0 RGBA(245, 223, 78, 1), 0 10px 0 RGBA(245, 223, 78, 1), 10px 10px 0 rgb(248, 249, 250), 20px 10px 0 RGBA(245, 223, 78, 1), 30px 10px 0 rgb(248, 249, 250), 0 20px 0 rgb(248, 249, 250), 10px 20px 0 RGBA(245, 223, 78, 1), 20px 20px 0 rgb(248, 249, 250), 30px 20px 0 RGBA(245, 223, 78, 1), 0 30px 0 RGBA(245, 223, 78, 1), 10px 30px 0 rgb(248, 249, 250), 20px 30px 0 RGBA(245, 223, 78, 1), 30px 30px 0 rgb(248, 249, 250), 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .icons .card {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,6 +585,10 @@ section.aboutMe h2 {
 .icons .card p {
   margin-top: 10px;
   font-weight: 400;
+}
+.icons .card .typeScript {
+  position: relative;
+  bottom: 5px;
 }
 
 .resumeSummary {
@@ -1179,8 +1183,11 @@ footer .footerFlex p span {
   .icons .card p {
     font-size: 0.8rem;
   }
+  .icons .card .typeScript {
+    bottom: 2px;
+  }
   .resumeSummary {
-    height: 1400px;
+    height: 1200px;
   }
   .experienceContainer .resumeFlex {
     -webkit-box-orient: vertical;
@@ -1198,7 +1205,7 @@ footer .footerFlex p span {
     width: 400px;
   }
   .getInTouch {
-    height: 1100px;
+    height: 775px;
   }
   .infoCol p {
     font-size: 0.8rem;
@@ -1218,6 +1225,10 @@ footer .footerFlex p span {
   }
   .imageFlex .card .buttonFlex a, .imageFlex .card .buttonFlex button {
     margin: 10px 5px 0px 5px;
+  }
+  .icons .card .typeScript {
+    bottom: 2px;
+    left: 10px;
   }
 }
 @media (max-width: 410px) {
@@ -1294,7 +1305,22 @@ footer .footerFlex p span {
   .icons .card p {
     font-size: 0.5rem;
   }
+  .icons .card .typeScript {
+    left: 0px;
+  }
   .resumeSummary {
-    height: 1600px;
+    height: 1400px;
+  }
+  .secondCol {
+    position: relative;
+    top: 40px;
+  }
+  .educationFix {
+    position: relative;
+    bottom: 40px;
+  }
+  .skillsFix {
+    position: relative;
+    bottom: 14px;
   }
 }
