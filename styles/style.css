@@ -929,6 +929,41 @@ a:visited {
   display: none;
 }
 
+.codeJournal {
+  background-color: rgb(255, 255, 255);
+  height: 1000px;
+}
+.codeJournal h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 50px;
+}
+
+.codeJournalFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(90% - 90px);
+}
+.codeJournalFlex .dateScroll {
+  border: 1px solid black;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  overflow-y: auto;
+}
+.codeJournalFlex .blogContent {
+  border: 1px solid black;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  overflow-y: auto;
+}
+.codeJournalFlex .blogContent li {
+  list-style: none;
+}
+.codeJournalFlex .blogContent li .hidden {
+  display: none;
+}
+
 .getInTouch {
   height: 600px;
   background-color: RGBA(245, 223, 78, 1);

@@ -1,0 +1,32 @@
+.codeJournal {
+    background-color: rgb(255,255,255);
+    height: 1000px;
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 50px;
+    }
+}
+
+.codeJournalFlex {
+    display: flex;
+    height: calc(90% - 90px);
+    .dateScroll {
+        border: 1px solid black;
+        flex-basis: 20%;
+        overflow-y: auto;
+    }
+    .blogContent {
+        border: 1px solid black;
+        flex-basis: 80%;
+        overflow-y: auto;
+        li {
+            list-style: none;
+            .hidden {
+                display: none;
+            }
+        }
+        
+    }
+}
+

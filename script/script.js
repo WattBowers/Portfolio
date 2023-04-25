@@ -1,54 +1,67 @@
-// modal functionality
+import { setModal } from "./modal.js";
 
-//getting modal elements
+setModal()
 
-const psdModal = document.getElementById('psdModal');
-const wbwModal = document.getElementById('wbwModal');
-const placeholderModal = document.getElementById('placeholderModal');
-const giphyModal = document.getElementById('giphyModal')
+const dateUl = document.getElementById('dateList')
+const blogContentUl = document.getElementById('blogContent')
 
-//getting overlay elements
-
-const psdOverlay = document.getElementById('psdOverlay');
-const wbwOverlay = document.getElementById('wbwOverlay');
-const placeholderOverlay = document.getElementById('placeholderOverlay');
-const giphyOverlay = document.getElementById('giphyOverlay')
-
-// getting modal opening button elements
-
-const psdBtn = document.getElementById('psd');
-const wbwBtn = document.getElementById('wbw');
-const placeholderBtn = document.getElementById('placeholder');
-const giphyBtn = document.getElementById('giphy')
-
-//getting close button elements
-
-const psdCloseBtn = document.getElementById('psdCloseBtn');
-const wbwCloseBtn = document.getElementById('wbwCloseBtn');
-const placeholderCloseBtn = document.getElementById('placeholderCloseBtn');
-const giphyCloseBtn = document.getElementById('giphyCloseBtn')
-
-//adding them to arrays to loop through
-const btnArr = [psdBtn, wbwBtn, placeholderBtn, giphyBtn];
-const modalArr = [psdModal, wbwModal, placeholderModal, giphyModal];
-const OverlayArr = [psdOverlay, wbwOverlay, placeholderOverlay, giphyOverlay];
-const closeBtnArr = [psdCloseBtn, wbwCloseBtn, placeholderCloseBtn, giphyCloseBtn];
-
-//add event listeners to all of the buttons
-for(let i = 0; i < btnArr.length; i++) {
-    btnArr[i].addEventListener('click', (e) => {
-        e.preventDefault(); 
-        modalArr[i].classList.remove('hidden');
-        OverlayArr[i].classList.remove('hidden');
-    })
-
-    closeBtnArr[i].addEventListener('click', (e) => {
-        e.preventDefault();
-        modalArr[i].classList.add('hidden');
-        OverlayArr[i].classList.add('hidden');
-    })
+const getDateSuffix = (number) => {
+    if(number % 10 === 1) {
+        return 'st'
+    } else if(number % 10 === 2) {
+        return 'nd'
+    } else if(number % 10 === 3) {
+        return 'rd'
+    } else {
+        return 'th'
+    }
 }
 
+const createDate = (ts) => {
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const suffix = getDateSuffix(ts.getDate())
+    return `${months[ts.getMonth()]} ${ts.getDate()+suffix} ${ts.getFullYear()}`
+}
 
+const openBlog = (id) => {
+    debugger;
+    for(let i = 0; i < blogContentUl.children.length; i++) {
+        if(!blogContentUl.children[i].classList.toString().includes('hidden')) {
+            blogContentUl.children[i].classList.add('hidden')
+            
+        }
+    }
+    
+    const blogText = document.getElementById(`${id}`) 
+    blogText.classList.remove('hidden')
+}
+
+fetch("http://localhost:3000/api/blogs")
+    .then(response => response.json())
+    .then(data => {
+        
+        data.forEach(obj => {
+            
+            let ts = new Date(obj.createdAt);
+            const formattedDate = createDate(ts)
+
+            const li = document.createElement('li');
+            li.innerHTML = `<button id=${obj._id} class="dateText">${formattedDate}</button>`;
+            dateUl.appendChild(li)
+            const button = document.getElementById(`${obj._id}`);
+            
+
+            const blogLi = document.createElement('li');
+            blogLi.setAttribute('id', `${obj._id + 1}`);
+            blogLi.setAttribute('class', 'blogText hidden');
+            blogLi.innerHTML = `<h3>${obj.title}</h3><p>${obj.content}</p>`
+            blogContentUl.appendChild(blogLi)
+
+            button.addEventListener('click', () => {
+                openBlog(obj._id + 1)
+            })
+        })
+        
+    })
 
 
